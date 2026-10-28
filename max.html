@@ -15,6 +15,25 @@ h1{font-size:2.1rem;line-height:1.15;margin:0 0 12px}
 button{font:inherit;font-size:.9rem;background:var(--ink);color:var(--bg);border:0;padding:8px 14px;border-radius:4px;cursor:pointer}
 button:focus-visible,summary:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
 h2{font-size:1.4rem;margin:42px 0 10px;padding-bottom:6px;border-bottom:3px solid var(--mark)}
+.stcard{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--mark);margin:8px 0;padding:10px 14px 12px;border-radius:3px}
+.stcard h3{margin:0 0 6px;font:bold 1.02rem system-ui,sans-serif}
+.stcard p{margin:5px 0}
+.statwrap{margin:4px 0 8px}
+.stat{width:100%;border-collapse:collapse;font:.92rem/1.35 system-ui,sans-serif}
+.stat th,.stat td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:baseline}
+.stat th{color:var(--soft);font-size:.8rem;font-weight:bold}
+.stat td.n,.stat th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.stat td.both{text-align:center}
+.stat .who{display:block;color:var(--soft);font-weight:normal;font-size:.8rem}
+.stat tr.sub td{color:var(--soft)}
+@media (max-width:640px){
+.stat,.stat tbody,.stat tr,.stat td{display:block;width:auto}
+.stat thead{display:none}
+.stat tr{padding:8px 0 6px;border-bottom:1px solid var(--line)}
+.stat td,.stat td.n,.stat td.both{border:0;padding:1px 0;text-align:left;white-space:normal}
+.stat td.n::before{content:attr(data-h);color:var(--soft);margin-right:.5em}
+summary .bd{float:none;display:block;margin:2px 0 0}
+}
 details{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--mark);margin:8px 0;border-radius:3px}
 summary{cursor:pointer;padding:10px 14px;font-weight:bold;font-family:system-ui,sans-serif;font-size:.98rem}
 .b{padding:2px 16px 14px}
@@ -29,6 +48,53 @@ footer{margin-top:40px;color:var(--soft);font-size:.95rem}
 <main>
 <h1>Путь к победе на ВсОШ по математике: 9 класс</h1>
 <p class="lead">Темы отсортированы по важности и частоте. Метка рядом с названием показывает, в скольких из 45 разобранных задач регионального этапа (2021/22–2025/26) тема была основной. Нажми на тему: увидишь идею и простой пример.</p>
+
+<details>
+<summary>Четыре этапа, 9 класс <span class="bd">сезон 2025/26</span></summary>
+<div class="b">
+<p class="lv">С 9 класса открыты все четыре ступени. Школьный и муниципальный каждый регион проводит сам. Региональный и заключительный общие для страны. Дни муниципального, регионального и заключительного этапов сезона 2026/27 объявляют отдельно: ниже устойчивый формат и даты сезона 2025/26. С баллами можно не согласиться: после каждого этапа есть апелляция.</p>
+<div class="statwrap">
+<table class="stat">
+<thead>
+<tr><th>Этап</th><th class="n">Участники</th><th class="n">Победители</th><th class="n">Призёры</th></tr>
+</thead>
+<tbody>
+<tr><td><span class="st s">Ш</span>Школьный<span class="who">4–11 классы</span></td><td class="n" data-h="Участники">3&nbsp;167&nbsp;470</td><td class="n both" colspan="2" data-h="Победители и призёры">829&nbsp;432 вместе</td></tr>
+<tr><td><span class="st m">М</span>Муниципальный<span class="who">все классы этапа</span></td><td class="n" data-h="Участники">258&nbsp;010</td><td class="n both" colspan="2" data-h="Победители и призёры">38&nbsp;177 вместе</td></tr>
+<tr><td><span class="st r">Р</span>Региональный<span class="who">9–11 классы</span></td><td class="n" data-h="Участники">10&nbsp;150</td><td class="n" data-h="Победители">550</td><td class="n" data-h="Призёры">2&nbsp;543</td></tr>
+<tr><td><span class="st z">З</span>Заключительный<span class="who">9–11 классы</span></td><td class="n" data-h="Участники">499</td><td class="n" data-h="Победители">29</td><td class="n" data-h="Призёры">195</td></tr>
+<tr class="sub"><td>Вариант 9 класса<span class="who">часть финала</span></td><td class="n" data-h="Участники">138</td><td class="n" data-h="Победители">8</td><td class="n" data-h="Призёры">49</td></tr>
+</tbody>
+</table>
+</div>
+<p class="lv">Числа по стране — сводка Института содержания и методов обучения за 2025/26. На школьном и муниципальном этапах победители и призёры даны одной суммой. Финал 9 класса — по протоколу жюри: кто писал вариант 9 класса.</p>
+<div class="stcard">
+<h3><span class="st s">Ш</span>Школьный. Сентябрь–октябрь</h3>
+<p>Пишет любой ученик 9 класса, предварительного отбора нет. Школа просит согласие родителя на обработку данных.</p>
+<p>8 задач, 120 минут. В Москве и в общем комплекте «Сириус.Курсы» максимум 56 баллов. В Московской области максимум 40: по 5 за задачу, промежуточных баллов нет. В бланк идёт ответ, ход решения жюри не читает. В 9 классе часть задач разбита на пункты, баллы за пункты складываются. Калькулятор, телефон и справочники нельзя.</p>
+<p>Сезон 2026/27: Московская область 26–28 сентября, Москва 13 октября (окно с 9:00 до 21:00, 120 минут считаются с кнопки «Приступить», вход через МЭШ), остальные регионы 13–16 октября, день зависит от группы региона. Отсчёт не останавливается, если закрыть страницу.</p>
+<p>Дальше зовут по порогу своего муниципалитета. В Москве в 2025/26 на муниципальный этап по математике в 9 классе нужно было 32 балла из 56.</p>
+</div>
+<div class="stcard">
+<h3><span class="st m">М</span>Муниципальный. Ноябрь–декабрь</h3>
+<p>Попадают те, кто набрал порог школьного этапа. В Москве сезон 2025/26: 4 декабря, старт в 16:00.</p>
+<p>Москва: 8 задач по 7 баллов, максимум 56, на работу 120 минут. У каждой задачи несколько числовых вариантов. Часть задач с пунктами (а) и (б). Проверяется ответ.</p>
+<p>В других регионах комплект свой: обычно 5–6 задач, и там уже могут требовать письменное решение. В Московской области в 2024/25 у 9 класса было 5 задач. Минуты тура и порог на регион публикует сам регион.</p>
+</div>
+<div class="stcard">
+<h3><span class="st r">Р</span>Региональный. Январь–февраль</h3>
+<p>Один комплект на всю страну, задания 9, 10 и 11 классов разные. Сезон 2025/26: 2 февраля первый тур, 3 февраля второй.</p>
+<p>Два дня по 5 задач, на каждый тур 3 часа 55 минут. Всего 10 задач. Каждая от 0 до 7 баллов, максимум 70. Нужно письменное решение: неполный ход даёт часть баллов, ответ без обоснования не засчитывают, черновики не читают.</p>
+<p>Очно. С собой паспорт, ручка с синей пастой, линейка и циркуль. Телефон, калькулятор, свои тетради и учебники нельзя.</p>
+<p>В 2025/26 на заключительный этап 9 класса проходили с 52 баллов из 70. Порог каждый год новый. Диплом этого этапа при поступлении может дать дополнительные баллы, если вуз учитывает его среди достижений.</p>
+</div>
+<div class="stcard">
+<h3><span class="st z">З</span>Заключительный. Март–апрель</h3>
+<p>Одна площадка на страну. Сезон 2025/26: Москва, 14–20 апреля, туры 15 и 16 апреля.</p>
+<p>Два дня по 4 задачи, на каждый тур 5 часов. Всего 8 задач, каждая от 0 до 7 баллов, максимум 56. Снова письменное решение и частичные баллы. Ручки выдаёт оргкомитет.</p>
+<p>Попадают те, кто набрал проходной балл Министерства просвещения на региональном этапе. Диплом победителя или призёра действует 4 года и даёт поступление без вступительных испытаний туда, где вуз принимает олимпиаду по математике.</p>
+</div>
+</div></details>
 <p class="leg">Задачи из олимпиад:<span class="st s">Ш</span>школьный этап<span class="st m">М</span>муниципальный<span class="st r">Р</span>региональный<span class="st z">З</span>заключительный</p>
 <p style="margin:12px 0 0"><button id="all" type="button">Раскрыть всё</button></p>
 
